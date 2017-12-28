@@ -24,8 +24,30 @@ informations. Il doit accomplir les taches suivantes:
 - Parser les données pour retrouver les évenements qui nous interessent
 - Compter le nombre de jours et demi-jounées pour chaque client pour le mois demandé
 
-Le fichier [sample.ics](samle.ics) contient un exemple de données récupérée de
-Google Calendar.
+Le fichier [sample.ics](sample.ics) contient un exemple de données récupérée de
+Google Calendar. En voici un extrait:
+
+```
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20180309
+DTEND;VALUE=DATE:20180310
+DTSTAMP:20171227T205057Z
+UID:7kmbo1ntjuu6lfekmc1tsqb23s@google.com
+CREATED:20171227T201721Z
+DESCRIPTION:
+LAST-MODIFIED:20171227T201721Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:[aprem] client A
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H10M0S
+END:VALARM
+END:VEVENT
+```
 
 En bonus, l'outil pourra aller jusqu'à la création du PDF de la facture.
 
